@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
 
-    localhost.MyWService myWS = new localhost.MyWService();
+    localhost.MyWService myWS = new localhost.MyWService();     //creator for web service
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -18,7 +18,7 @@ public partial class _Default : System.Web.UI.Page
         Label4.Visible = false;
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)        //function executes a percentage calculation and returns results 
     {
         int myVal = Convert.ToInt32(tbMyValue.Text);
         int myTot = Convert.ToInt32(tbMyTotal.Text);
